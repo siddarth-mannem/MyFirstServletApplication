@@ -47,6 +47,12 @@ public class FirstServlet extends HttpServlet {
 			requestDipatcher.forward(request, resp);
 		}
 		
+		
+		// Create all these code in a new Class "RegistrationServlet" and Create new Jsp "resgitration.jsp" with form in it
+		// Create instance of AddUserService and User
+		// add values in to User object by getting values from request parameter
+		// ex : user.setFirstName(request.getParameter("firstName"));
+		
 		RequestDispatcher requestDipatcher = request.getRequestDispatcher("/WEB-INF/html/success.jsp");
 		requestDipatcher.forward(request, resp);		
 	}

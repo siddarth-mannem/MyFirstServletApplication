@@ -8,6 +8,6 @@
 </head>
 <body>
 
-	<h1>Hellooo... Succesfully Logged In. Congrats!!! </h1>
+	<h1>Hellooo... Successfully Registered. Congrats!!! </h1>
 </body>
 </html>

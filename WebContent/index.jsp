@@ -8,6 +8,7 @@
 </head>
 <body>
 
-	<h1>Hellooo... Succesfully Logged In. Congrats!!! </h1>
+	<h1>Welcome to Tomcat... and MyFirstWebApplication</h1>
+<a href="register.jsp">Click Here to Register</a>
 </body>
 </html>

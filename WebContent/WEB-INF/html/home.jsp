@@ -10,26 +10,34 @@
 <body>
 
 	<h1>Hellooo... Welcome to Web Application using First Servlet </h1>
+	
+	<form action="/MyFirstServletApplication/userLogin" method="post">
+
+
+
+		<c:if test="${not empty userNameErr}">
+			<p style="color:red">
+				<c:out value="${userNameErr}" />
+			</p>
+		</c:if>
+		
+		<c:if test="${not empty passwordErr}">
+			<p style="color:red">
+				<c:out value="${passwordErr}" />
+			</p>
+		</c:if>
+		
+		username: <input type="text" value="" name ="userName"/> </br>
+		
+		password: <input type="password" value="" name= "password"/> </br>
+		
+		<input type="submit" value="Login" />
+	</form>
+	
 
 	<form action="/MyFirstServletApplication/userLogin" method="post">
 
-<!-- Dont use Scriplet tags any more because of low performance    -->
-<%-- 		
-		<%
-			if(request.getAttribute("password") != null ) {
-			
-		%>
-		
-		<p style="color:red">
-			<%=request.getAttribute("userName")%>
-			<%=request.getAttribute("password")%>
-		</p>
-		
-		<%
-			}
-		%> 
-		
---%>
+
 
 		<c:if test="${not empty userNameErr}">
 			<p style="color:red">

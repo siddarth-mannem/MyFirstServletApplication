@@ -8,8 +8,6 @@ public class User {
 	private String username;
 	private String password;
 	private String securityKey;
-	private String createDate;
-	private String updatedDate;
+
 	
-	// Create Setter and Getter
 }

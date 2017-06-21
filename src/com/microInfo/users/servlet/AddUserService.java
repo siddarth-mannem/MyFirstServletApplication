@@ -4,7 +4,7 @@ public class AddUserService {
 
 	
 	
-	public int createUser(User user) {
+/*	public int createUser(User user) {
 		
 		// Create DB connection
 		// Create INSERT query
@@ -15,6 +15,6 @@ public class AddUserService {
 		
 		// return created ID
 		return 0;
-	}
+	}*/
 	
 }

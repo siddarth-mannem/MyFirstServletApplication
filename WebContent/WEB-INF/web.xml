@@ -17,6 +17,11 @@
 		<servlet-class>com.microInfo.users.servlet.<yourNEwClass></servlet-class>
 	</servlet> -->
 	
+	<servlet>
+		<servlet-name>fetchUsers</servlet-name>
+		<servlet-class>com.microInfo.users.servlet.UserServlet</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>firstServlet</servlet-name>
 		<url-pattern>/welcome</url-pattern>
@@ -28,9 +33,14 @@
 	</servlet-mapping>
 	
 	<servlet-mapping>
+		<servlet-name>fetchUsers</servlet-name>
+		<url-pattern>/fetchUsers</url-pattern>
+	</servlet-mapping>
+	
+<!-- 	<servlet-mapping>
 		<servlet-name>registerServlet</servlet-name>
 		<url-pattern>/registerUser</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 
 	<welcome-file-list>
 		<welcome-file>/WEB-INF/index.jsp</welcome-file>

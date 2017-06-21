@@ -12,15 +12,6 @@ public class AddUserService {
 	
 	public int createUser(User user) throws ClassNotFoundException {
 		
-		// Create DB connection
-		// Create INSERT query
-		// Create Prepared STatemnt
-		//  Insert values in to Prepared Statement object dynamically from user object.
-		// Ex: prepStmt.setString(2, user.getLastName());
-		// Insert Date in to DB
-		
-		// return created ID
-		
       Class.forName("com.mysql.jdbc.Driver");
 		
 		int id=0;
@@ -53,5 +44,6 @@ public class AddUserService {
 		return id;
 
 	}
+
 	
 }
